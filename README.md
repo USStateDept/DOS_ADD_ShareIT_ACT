@@ -1,93 +1,137 @@
 # DoS - Metadata
 
-
-
-## Getting started
-
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
-
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
-
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
-```
-cd existing_repo
-git remote add origin https://gitlab.fan.gov/dos/dos-metadata.git
-git branch -M main
-git push -uf origin main
-```
-
-## Integrate with your tools
-
-- [ ] [Set up project integrations](https://gitlab.fan.gov/dos/dos-metadata/-/settings/integrations)
-
-## Collaborate with your team
-
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
-
-## Test and Deploy
-
-Use the built-in continuous integration in GitLab.
-
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
-
-***
-
-# Editing this README
-
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
-
-## Suggestions for a good README
-
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
-
-## Name
-Choose a self-explaining name for your project.
+This repository contains the consolidated metadata inventory for all Department of State (DoS) software projects, collected in compliance with federal source code policies and the [Federal Source Code Policy](https://www.congress.gov/bill/118th-congress/house-bill/9566).
 
 ## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+This repository serves as the central metadata registry for DoS software projects, providing a comprehensive inventory of all department-developed software assets. The metadata is automatically collected and updated from individual project repositories across DoS GitLab instances.
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+## Contents
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+- `metadata.csv` - Master inventory file containing metadata for all DoS software projects
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+## Metadata Schema
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+The metadata inventory includes the following information for each software project:
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+| Field | Description | Purpose |
+|-------|-------------|---------|
+| Project_Name | Name of the software project | Project identification and cataloging |
+| Description | Brief description of the project's purpose and functionality | Understanding project scope and capabilities |
+| Contract_ID | Associated contract or funding identifier | Budget tracking and compliance |
+| License_Information | Software license type (e.g., MIT, Apache 2.0, Public Domain) | Legal compliance and reuse guidelines |
+| Link | URL to the project repository or documentation | Access and reference |
+| POC | Point of Contact (name and email) | Support and collaboration |
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+## Data Usage
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+This metadata inventory supports:
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+### Federal Compliance
+- **Source Code Inventory**: Satisfies federal requirements for maintaining software asset inventories
+- **Open Source Reporting**: Tracks open source releases per OMB guidelines
+- **License Compliance**: Ensures proper licensing documentation for all projects
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### Internal Operations
+- **Project Discovery**: Enables staff to find and leverage existing solutions
+- **Resource Planning**: Supports budget and resource allocation decisions
+- **Collaboration**: Facilitates cross-bureau collaboration on similar projects
 
-## License
-For open source projects, say how it is licensed.
+### Public Transparency
+- **Government Accountability**: Provides visibility into DoS software development activities
+- **Reuse Opportunities**: Helps other agencies identify reusable solutions
+- **Innovation Tracking**: Documents DoS contributions to open source ecosystem
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## Data Updates
+
+The metadata in this repository is automatically updated on a regular schedule through automated collection processes. Updates include:
+
+- New project additions
+- Metadata corrections and updates
+- License and contact information changes
+- Project status updates
+
+**Last Updated**: [Automatically updated timestamp]
+
+## Data Quality
+
+### Validation
+All metadata entries are validated for:
+- Required field completeness
+- URL accessibility and validity
+- Contact information accuracy
+- License compliance
+
+### Data Sources
+Metadata is collected directly from:
+- Individual project `metadata.csv` files
+- GitLab project settings and descriptions
+- Bureau-provided project registrations
+
+## Using This Data
+
+### For DoS Staff
+- Search the CSV file to find existing projects before starting new development
+- Use contact information to collaborate with project teams
+- Reference license information for reuse decisions
+
+### For Other Federal Agencies
+- Identify DoS solutions that may address similar needs
+- Understand licensing terms for potential reuse
+- Contact project teams for collaboration opportunities
+
+### For the Public
+- View DoS contributions to open source software
+- Access publicly available DoS software projects
+- Understand the scope of DoS software development activities
+
+## Data Format
+
+The metadata is provided in CSV format for maximum compatibility with analysis tools. To use the data:
+
+1. Download `metadata.csv` from this repository
+2. Open in spreadsheet software (Excel, Google Sheets, etc.)
+3. Use built-in filtering and search capabilities
+4. Import into database systems for advanced analysis
+
+## Compliance Framework
+
+This metadata collection supports compliance with:
+
+- **Federal Source Code Policy** (H.R. 9566, 118th Congress)
+- **OMB Memorandum M-16-21**: Federal Source Code Policy
+- **DoS Information Management Directive**: Software Asset Management
+- **FISMA Requirements**: Information system inventories
+
+## Contact Information
+
+### For Metadata Questions
+- **Technical Issues**: Contact the project POC listed in individual entries
+- **Process Questions**: [DoS IT Service Desk contact information]
+- **Policy Questions**: [DoS Information Management contact information]
+
+### For Data Corrections
+To report incorrect or outdated metadata:
+1. Contact the project POC directly (preferred)
+2. Submit correction through [internal process]
+3. For urgent corrections: [emergency contact information]
+
+## Related Resources
+
+- **DoS Software Development Guidelines**: [Internal link]
+- **Federal Source Code Policy**: https://www.congress.gov/bill/118th-congress/house-bill/9566
+- **OMB Source Code Guidance**: https://code.gov/
+- **DoS Open Source Projects**: [Public facing portal if available]
+
+## Repository Maintenance
+
+This repository is maintained by the Department of State Bureau of Information Resource Management in coordination with software development teams across the department.
+
+**Repository Type**: Metadata Registry  
+**Classification**: Unclassified  
+**Availability**: Internal DoS / Federal Government  
+**Retention**: Permanent Record
+
+---
+
+*This metadata inventory is maintained in accordance with federal records management requirements and DoS information governance policies.*
