@@ -1,3 +1,5 @@
 Project_Name,Description,Contract_ID,License_Information,Link,POC
 Jira to Power BI connection with JWP,Code that enables our Jira to connect to Power BI,12345,n/a,https://gitlab.fan.gov,se-tools_customer_support@fan.gov
+GovCom SMS Texting,GovCom is a REST API designed to give Department of State applications a means to text anyone through SMS in the United States.,374686,n/a,https://gitlab.fan.gov/dos/dt/add/se-eccs/govcom,Matthew Cataldi (cataldimc@fan.gov | cataldimc@state.gov) - Lead Engineer
+GovCom SMS Texting Meta Repo,GovCom is a REST API designed to give Department of State applications a means to text anyone through SMS in the United States.  This is the metarepo that supports all resources needed to run GovCom.,374686,n/a,https://gitlab.fan.gov/dos/dt/add/se-eccs/govcom,Matthew Cataldi (cataldimc@fan.gov | cataldimc@state.gov) - Lead Engineer
 Local Dependencies and Modules,Local Terraform modules mirrored from github,12345,n/a,https://gitlab.fan.gov,se-tools_customer_support@fan.gov
