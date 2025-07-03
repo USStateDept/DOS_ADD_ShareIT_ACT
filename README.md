@@ -107,7 +107,7 @@ This metadata collection supports compliance with:
 
 ### For Metadata Questions
 - **Technical Issues**: Contact the project POC listed in individual entries
-- **Process Questions**: [DoS IT Service Desk contact information]
+- **Process Questions**: Contact **ADD_Share_IT@state.gov** for requesting access to Software Projects/repositories.
 - **Policy Questions**: [DoS Information Management contact information]
 
 ### For Data Corrections
