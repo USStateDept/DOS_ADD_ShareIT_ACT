@@ -1,8 +1,6 @@
 Project_Name,Description,Contract_ID,License_Information,Link,POC
 Portal-UI,The Center for Analytics Data Services Portal.,19AQMM24C0105,n/a,https://gitlab.fan.gov/dos/dt/add,Timothy Ahrens (AhrensTN2@state.gov)
 DSAAI-UI,The Center for Analytics Prompter AI Portal.,19AQMM24C0105,n/a,https://gitlab.fan.gov/dos/dt/add,Timothy Ahrens (AhrensTN2@state.gov)
-cds-submission-ui,The Cross Domain Solution Submission Dashboard.,"19AQMM24C0105, 19AQMM24C0072",n/a,https://gitlab.fan.gov/dos/dt/add,Timothy Ahrens (AhrensTN2@state.gov)
-cds-dashboard-ui,The Cross Domain Solution Dashboard.,"19AQMM24C0105, 19AQMM24C0072",n/a,https://gitlab.fan.gov/dos/dt/add,Timothy Ahrens (AhrensTN2@state.gov)
 eRecordsUI-search,Frontend for eRecords Search application.,19AQMM24C0105,n/a,https://gitlab.fan.gov/dos/dt/add,Timothy Ahrens (AhrensTN2@state.gov)
 eRecordsUI-erscIngest,Frontend for eRecords Submission Dashboard application.,19AQMM24C0105,n/a,https://gitlab.fan.gov/dos/dt/add,Timothy Ahrens (AhrensTN2@state.gov)
 eRecordsUI-shared-ng-lib,Shared UI Angular components,19AQMM24C0105,n/a,https://gitlab.fan.gov/dos/dt/add,Timothy Ahrens (AhrensTN2@state.gov)
